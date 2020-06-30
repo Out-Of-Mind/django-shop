@@ -1,0 +1,7 @@
+{
+	"NAME": "shop_db",
+	"USER": "shop_user",
+	"PASSWORD": "kkr12y0t3gz8c4Y8",
+	"HOST": "localhost",
+	"PORT": 5432
+}
