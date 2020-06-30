@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-with open('db-config.json', 'rb') as f:
+with open('shop/db-config.json', 'rb') as f:
     d = json.load(f)
 
 
