@@ -1,15 +1,16 @@
 <!doctype html>
+{% load static %}
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Home 1 | Malias</title>
+        <title>{% block title %}Home 1 | Malias{% endblock %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- favicon
 		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
 		
 		<!-- Google Fonts
 		============================================ -->		
@@ -18,36 +19,36 @@
 	   
 		<!-- Bootstrap CSS
 		============================================ -->		
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 		<!-- Font awesome CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 		<!-- owl.carousel CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}">
 		<!-- nivo slider CSS
 		============================================ -->
-		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+		<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}" type="text/css" />
 		<!-- meanmenu CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
 		<!-- jquery-ui CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
 		<!-- animate CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 		<!-- main CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
 		<!-- style CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
 		<!-- responsive CSS
 		============================================ -->
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     </head>
     <body>
 
@@ -61,11 +62,11 @@
 							<div class="top-menu">
 								<!-- Start Language -->
 								<ul class="language">
-									<li><a href="#"><img class="right-5" src="img/flags/gb.png" alt="#">English<i class="fa fa-caret-down left-5"></i></a>
+									<li><a href="#"><img class="right-5" src="{% static 'img/flags/gb.png' %}" alt="#">English<i class="fa fa-caret-down left-5"></i></a>
 										<ul>
-											<li><a href="#"><img class="right-5" src="img/flags/fr.png" alt="#">French</a></li>
-											<li><a href="#"><img class="right-5" src="img/flags/gb.png" alt="#">English</a></li>
-											<li><a href="#"><img class="right-5" src="img/flags/gb.png" alt="#">English</a></li>
+											<li><a href="#"><img class="right-5" src="{% static 'img/flags/fr.png' %}" alt="#">French</a></li>
+											<li><a href="#"><img class="right-5" src="{% static 'img/flags/gb.png' %}" alt="#">English</a></li>
+											<li><a href="#"><img class="right-5" src="{% static 'img/flags/gb.png' %}" alt="#">English</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -157,7 +158,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-12">
 							<div class="logo">
-								<a href="index.html" title="Malias"><img src="img/logo.png" alt="Malias"></a>
+								<a href="index.html" title="Malias"><img src="{% static 'img/logo.png' %}" alt="Malias"></a>
 							</div>
 						</div>
 						<div class="col-md-9 col-sm-12">
@@ -205,7 +206,7 @@
 											<div class="mini-cart-content">
 												<div class="cart-img-details">
 													<div class="cart-img-photo">
-														<a href="#"><img src="img/product/total-cart.jpg" alt="#"></a>
+														<a href="#"><img src="{% static 'img/product/total-cart.jpg' %}" alt="#"></a>
 													</div>
 													<div class="cart-img-content">
 														<a href="#"><h4>Prod Aldults</h4></a>
@@ -221,7 +222,7 @@
 												<div class="clear"></div>
 												<div class="cart-img-details">
 													<div class="cart-img-photo">
-														<a href="#"><img src="img/product/total-cart2.jpg" alt="#"></a>
+														<a href="#"><img src="{% static 'img/product/total-cart2.jpg' %}" alt="#"></a>
 													</div>
 													<div class="cart-img-content">
 														<a href="#"><h4>Fact Prone</h4></a>
@@ -471,7 +472,7 @@
 	                                                </ul>
 	                                            </div>
 	                                            <div class="cat-left-drop-menu-left cat-left-drop-menu-photo">
-	                                            	<a href="#"><img src="img/megamenu/vmega_blog1.jpg" alt="Product"></a>
+	                                            	<a href="#"><img src="{% static 'img/megamenu/vmega_blog1.jpg' %}" alt="Product"></a>
 	                                            </div>
 	                                        </div>
 	                                        <!-- MEGA MENU END -->
@@ -516,10 +517,10 @@
 						<div class="slider-area">
 							<div class="bend niceties preview-1">
 								<div id="ensign-nivoslider" class="slides">	
-									<img src="img/sliders/slider-1/bg1.jpg" alt="Malias" title="#slider-direction-1"/>
-				 					<img src="img/sliders/slider-1/bg2.jpg" alt="Malias" title="#slider-direction-2"/>
-									<img src="img/sliders/slider-1/bg3.jpg" alt="Malias" title="#slider-direction-3"/><!-- 
-									<img src="img/sliders/slider-1/bg4.jpg" alt="" title="#slider-direction-4"/>  -->     
+									<img src="{% static 'img/sliders/slider-1/bg1.jpg' %}" alt="Malias" title="#slider-direction-1"/>
+				 					<img src="{% static 'img/sliders/slider-1/bg2.jpg' %}" alt="Malias" title="#slider-direction-2"/>
+									<img src="{% static 'img/sliders/slider-1/bg3.jpg' %}" alt="Malias" title="#slider-direction-3"/><!-- 
+									<img src="{% static 'img/sliders/slider-1/bg4.jpg' %}" alt="" title="#slider-direction-4"/>  -->     
 								</div>
 								<!-- direction 1 -->
 								<div id="slider-direction-1" class="t-lfr slider-direction">
@@ -605,7 +606,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-hot-deals">
 			                    			<div class="hot-deals-photo">
-			                    				<a href="#"><img src="img/hot-deals/1.jpg" alt="Product"></a>
+			                    				<a href="#"><img src="{% static 'img/hot-deals/1.jpg' %}" alt="Product"></a>
 			                    			</div>
 			                    			<div class="count-down">
 							                    <div class="timer">
@@ -627,7 +628,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-hot-deals">
 			                    			<div class="hot-deals-photo">
-			                    				<a href="#"><img src="img/hot-deals/2.jpg" alt="Product"></a>
+			                    				<a href="#"><img src="{% static 'img/hot-deals/2.jpg' %}" alt="Product"></a>
 			                    			</div>
 			                    			<div class="count-down">
 							                    <div class="timer">
@@ -649,7 +650,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-hot-deals">
 			                    			<div class="hot-deals-photo">
-			                    				<a href="#"><img src="img/hot-deals/3.jpg" alt="Product"></a>
+			                    				<a href="#"><img src="{% static 'img/hot-deals/3.jpg' %}" alt="Product"></a>
 			                    			</div>
 			                    			<div class="count-down">
 							                    <div class="timer">
@@ -687,7 +688,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -710,7 +711,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/2.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/2.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -733,7 +734,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -756,7 +757,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/4.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/4.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -781,7 +782,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -804,7 +805,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/6.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/6.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -827,7 +828,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/7.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/7.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -850,7 +851,7 @@
 										<div class="single-product">
 											<div class="product-img">
 												<a href="#">
-													<img class="primary-img" src="img/product/small/8.jpg" alt="Product">
+													<img class="primary-img" src="{% static 'img/product/small/8.jpg' %}" alt="Product">
 												</a>
 											</div>
 											<div class="product-description">
@@ -881,10 +882,10 @@
 	                    <div class="sidebar-banner">
 	                    	<div class="active-sidebar-banner">
 	                    		<div class="single-sidebar-banner">
-	                    			<a href="#"><img src="img/banner/1.jpg" alt="Product Banner"></a>
+	                    			<a href="#"><img src="{% static 'img/banner/1.jpg' %}" alt="Product Banner"></a>
 	                    		</div>
 	                    		<div class="single-sidebar-banner">
-	                    			<a href="#"><img src="img/banner/2.jpg" alt="Product Banner"></a>
+	                    			<a href="#"><img src="{% static 'img/banner/2.jpg' %}" alt="Product Banner"></a>
 	                    		</div>
 	                    	</div>
 	                    </div>
@@ -902,7 +903,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-recent-posts">
 			                    			<div class="recent-posts-photo">
-			                    				<img src="img/posts/1.jpg" alt="Recent Posts">
+			                    				<img src="{% static 'img/posts/1.jpg' %}" alt="Recent Posts">
 			                    			</div>
 			                    			<div class="recent-posts-text">
 			                    				<h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -917,7 +918,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-recent-posts">
 			                    			<div class="recent-posts-photo">
-			                    				<img src="img/posts/2.jpg" alt="Recent Posts">
+			                    				<img src="{% static 'img/posts/2.jpg' %}" alt="Recent Posts">
 			                    			</div>
 			                    			<div class="recent-posts-text">
 			                    				<h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -932,7 +933,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-recent-posts">
 			                    			<div class="recent-posts-photo">
-			                    				<img src="img/posts/3.jpg" alt="Recent Posts">
+			                    				<img src="{% static 'img/posts/3.jpg' %}" alt="Recent Posts">
 			                    			</div>
 			                    			<div class="recent-posts-text">
 			                    				<h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -947,7 +948,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-recent-posts">
 			                    			<div class="recent-posts-photo">
-			                    				<img src="img/posts/4.jpg" alt="Recent Posts">
+			                    				<img src="{% static 'img/posts/4.jpg' %}" alt="Recent Posts">
 			                    			</div>
 			                    			<div class="recent-posts-text">
 			                    				<h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -962,7 +963,7 @@
 		                    		<div class="col-xs-12">
 			                    		<div class="single-recent-posts">
 			                    			<div class="recent-posts-photo">
-			                    				<img src="img/posts/1.jpg" alt="Recent Posts">
+			                    				<img src="{% static 'img/posts/1.jpg' %}" alt="Recent Posts">
 			                    			</div>
 			                    			<div class="recent-posts-text">
 			                    				<h5><a href="#" class="recent-posts-title">swimwear for women</a></h5>
@@ -984,7 +985,7 @@
 							<div class="row">
 								<div class="col-md-7 banner-box1">
 									<div class="single-product-banner">
-										<a href="#"><img src="img/banner/3.jpg" alt="Product Banner"></a>
+										<a href="#"><img src="{% static 'img/banner/3.jpg' %}" alt="Product Banner"></a>
 										<div class="banner-text banner-1">
 											<h2>head phone 2015</h2>
 										</div>
@@ -992,7 +993,7 @@
 								</div>
 								<div class="col-md-5 banner-box2">
 									<div class="single-product-banner">
-										<a href="#"><img src="img/banner/4.jpg" alt="Product Banner"></a>
+										<a href="#"><img src="{% static 'img/banner/4.jpg' %}" alt="Product Banner"></a>
 										<div class="banner-text banner-2">
 											<h2>Deals <span>50%</span></h2>
 											<p>lumina n85</p>
@@ -1042,8 +1043,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/12.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/12bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/12.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/12bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1083,8 +1084,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/12bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/12.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/12bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/12.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1121,8 +1122,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1159,8 +1160,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1200,8 +1201,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1241,8 +1242,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1293,8 +1294,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1334,8 +1335,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1372,8 +1373,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1410,8 +1411,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1451,8 +1452,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1492,8 +1493,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1544,8 +1545,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1585,8 +1586,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1623,8 +1624,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1661,8 +1662,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1702,8 +1703,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1743,8 +1744,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1827,8 +1828,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/10bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1868,8 +1869,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1906,8 +1907,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1947,8 +1948,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -1988,8 +1989,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2029,8 +2030,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2081,8 +2082,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/10bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2122,8 +2123,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2160,8 +2161,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2198,8 +2199,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2239,8 +2240,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2280,8 +2281,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2332,8 +2333,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/10bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2373,8 +2374,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2411,8 +2412,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2449,8 +2450,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2490,8 +2491,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2531,8 +2532,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2583,8 +2584,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/13.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2624,8 +2625,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2662,8 +2663,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/13.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/13.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2700,8 +2701,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/10bg.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/10bg.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2741,8 +2742,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2782,8 +2783,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2866,8 +2867,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2907,8 +2908,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2945,8 +2946,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -2986,8 +2987,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3027,8 +3028,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3068,8 +3069,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3120,8 +3121,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/6.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3161,8 +3162,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3199,8 +3200,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3237,8 +3238,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3278,8 +3279,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3319,8 +3320,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3371,8 +3372,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3412,8 +3413,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3450,8 +3451,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3488,8 +3489,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3529,8 +3530,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3570,8 +3571,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3622,8 +3623,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/1.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/1bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/1.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/1bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3663,8 +3664,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/2.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/2bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/2.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/2bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3701,8 +3702,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/3.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/3.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3739,8 +3740,8 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/4.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/4.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3780,8 +3781,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/5.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/3bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/5.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/3bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3821,8 +3822,8 @@
 																</div>
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/mediam/6.jpg" alt="Product">
-																		<img class="secondary-img" src="img/product/mediam/4bg.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/mediam/6.jpg' %}" alt="Product">
+																		<img class="secondary-img" src="{% static 'img/product/mediam/4bg.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3870,7 +3871,7 @@
 							<div class="row">
 								<div class="col-md-7 banner-box1">
 									<div class="single-product-banner">
-										<a href="#"><img src="img/banner/5.jpg" alt="Product Banner"></a>
+										<a href="#"><img src="{% static 'img/banner/5.jpg' %}" alt="Product Banner"></a>
 										<div class="banner-text banner-1">
 											<h2>ApBle 4s</h2>
 											<p>Vibrant colors beautifully designed</p>
@@ -3880,7 +3881,7 @@
 								</div>
 								<div class="col-md-5 banner-box2">
 									<div class="single-product-banner">
-										<a href="#"><img src="img/banner/6.jpg" alt="Product Banner"></a>
+										<a href="#"><img src="{% static 'img/banner/6.jpg' %}" alt="Product Banner"></a>
 										<div class="banner-text banner-2">
 											<h2>Htc <span>N8.</span></h2>
 											<p>lumina n85</p>
@@ -3920,7 +3921,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3948,7 +3949,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -3976,7 +3977,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4008,7 +4009,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4036,7 +4037,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4064,7 +4065,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4096,7 +4097,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4126,7 +4127,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4156,7 +4157,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4190,7 +4191,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4220,7 +4221,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4250,7 +4251,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4284,7 +4285,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4314,7 +4315,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4344,7 +4345,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4386,7 +4387,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4416,7 +4417,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4446,7 +4447,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4480,7 +4481,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4510,7 +4511,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4540,7 +4541,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4574,7 +4575,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4604,7 +4605,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4634,7 +4635,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4668,7 +4669,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4698,7 +4699,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4728,7 +4729,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4762,7 +4763,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4792,7 +4793,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4822,7 +4823,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4864,7 +4865,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4894,7 +4895,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4924,7 +4925,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4958,7 +4959,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -4988,7 +4989,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5018,7 +5019,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5052,7 +5053,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5082,7 +5083,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5112,7 +5113,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5146,7 +5147,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5176,7 +5177,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5206,7 +5207,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5240,7 +5241,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/1.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/1.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5270,7 +5271,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/5.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/5.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5300,7 +5301,7 @@
 															<div class="single-product">
 																<div class="product-img">
 																	<a href="#">
-																		<img class="primary-img" src="img/product/small/3.jpg" alt="Product">
+																		<img class="primary-img" src="{% static 'img/product/small/3.jpg' %}" alt="Product">
 																	</a>
 																</div>
 																<div class="product-description">
@@ -5357,47 +5358,47 @@
 						<div class="active-brand-logo">
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/1.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/1.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/2.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/2.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/3.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/3.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/4.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/4.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/5.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/5.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/6.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/6.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/1.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/1.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/2.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/2.png' %}" alt=""></a>
 								</div>
 							</div>
 							<div class="col-md-2">
 								<div class="single-brand-logo">
-									<a href="#"><img src="img/brand/3.png" alt=""></a>
+									<a href="#"><img src="{% static 'img/brand/3.png' %}" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -5513,7 +5514,7 @@
 							<div class="copyright">
 								<p>Copyright &copy; Взято с <a href="http://bayguzin.ru" target="_blank"> bayguzin.ru</a> All rights reserved.</p>
 								<div class="payment">
-									<a href="#"><img src="img/payment.png" alt="Payment"></a>
+									<a href="#"><img src="{% static 'img/payment.png' %}" alt="Payment"></a>
 								</div>
 							</div>
 						</div>
@@ -5536,7 +5537,7 @@
 							<div class="modal-product">
 								<div class="product-images">
 									<div class="main-image images">
-										<img alt="#" src="img/product/quickview-photo.jpg"/>
+										<img alt="#" src="{% static 'img/product/quickview-photo.jpg' %}"/>
 									</div>
 								</div><!-- .product-images -->
 
@@ -5587,36 +5588,36 @@
 
 		<!-- jquery
 		============================================ -->		
-        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="{% static 'js/jquery-1.11.3.min.js' %}"></script>
 		<!-- bootstrap JS
 		============================================ -->		
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
 		<!-- wow JS
 		============================================ -->		
-        <script src="js/wow.min.js"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
 		<!-- meanmenu JS
 		============================================ -->		
-        <script src="js/jquery.meanmenu.js"></script>
+        <script src="{% static 'js/jquery.meanmenu.js' %}"></script>
 		<!-- owl.carousel JS
 		============================================ -->		
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
 		<!-- scrollUp JS
 		============================================ -->		
-        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
         <!-- countdon.min JS
 		============================================ -->		
-        <script src="js/countdon.min.js"></script>
+        <script src="{% static 'js/countdon.min.js' %}"></script>
         <!-- jquery-price-slider js
 		============================================ --> 
-        <script src="js/jquery-price-slider.js"></script>
+        <script src="{% static 'js/jquery-price-slider.js' %}"></script>
         <!-- Nivo slider js
 		============================================ --> 		
-		<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+		<script src="{% static 'js/jquery.nivo.slider.js' %}" type="text/javascript"></script>
 		<!-- plugins JS
 		============================================ -->		
-        <script src="js/plugins.js"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
 		<!-- main JS
 		============================================ -->		
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/main.js' %}"></script>
     </body>
 </html>
